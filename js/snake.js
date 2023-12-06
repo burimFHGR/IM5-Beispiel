@@ -37,6 +37,16 @@
   // cell size
   const cellSize = grid_line_len / cellCount;
 
+  // Bereits gespielt?
+  if (localStorage.getItem('hasRun') === null) {
+    // Set the initial value to false as a string
+    localStorage.setItem('hasRun', JSON.stringify(false));
+  }
+
+  let hasRun = JSON.parse(localStorage.getItem('hasRun')) || false;
+
+
+
   let gameActive;
 
   // this will generate random color for head
@@ -202,6 +212,7 @@
   const isGameOver = () => {
     let gameOver = false;
 
+
     snakeParts.forEach((part) => {
       if (part.x == head.x && part.y == head.y) {
         gameOver = true;
@@ -226,7 +237,44 @@
     text.innerHTML = "game over !";
     const body = document.querySelector("body");
     body.appendChild(text);
+  // this will check if the game has run
+    console.log(hasRun);
+    console.log(score);
+
+    if (score > 1 && !hasRun) {
+      setTimeout(() => {
+        var name = prompt('Gebe deinen Namen ein');
+        
+         // Speichern des Namens im LocalStorage
+         localStorage.setItem('userName', name);
+
+        // Do something with the entered name, e.g., display it
+        alert('Hallo, ' + name + '!');
+        
+        // Set hasRun to true to ensure the code doesn't run again
+        hasRun = true;
+
+        // Save the updated value to local storage
+        localStorage.setItem('hasRun', JSON.stringify(hasRun));
+      }, 1000); // 1000 milliseconds = 1 second
+    }
+    
+
+    if (score >= localStorage.getItem("highScore") && localStorage.getItem("userName")) {
+      setTimeout(() => {
+        alert('Gratuliere ' + localStorage.getItem("userName") + ', du hast deinen Highscore geknackt! Das Leaderboard wurde angepasst.');
+      }, 1000); // 1000 milliseconds = 1 second
+    }
+
+    if (score <= 2) {
+      setTimeout(() => {
+        alert('Versuche es nochmals, falls du aufs Leaderboard schaffen möchtest.');
+      }, 1000); // 1000 milliseconds = 1 second
+    }
+
   };
+
+
 
   addEventListener("keydown", changeDir);
 
@@ -292,3 +340,7 @@
   showGridEl.addEventListener("click", toggleGrid);
   animate();
 })();
+
+console.log(localStorage.getItem("highScore"));
+
+

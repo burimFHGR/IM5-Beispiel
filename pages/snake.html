@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/snake.css">
     <body>
         <div class="parent">
             <div class="header"> 
                 <header>
-                    <img class="logo" src="logo.svg" alt="logo">
+                    <!-- <img class="logo" src="logo.svg" alt="logo"> -->
                     <nav>
                         <ul class="nav_links">
                             <li><a href="/pages/profile.html">Über mich</a></li>
                             <li><a href="../index.html">Home Bachelorthema</a></li>
-                            <li><a href="/pages/galery.html">Galerie</a></li>
+                            <li><a href="/pages/gallery.html">Galerie</a></li>
                         </ul>
                     </nav>
                    <a class="cta" href="/pages/snake.html"><button class="active">QR-Snake</button></a>
@@ -25,25 +25,23 @@
                 <div id="high-score"></div>
                 <div id="score"></div>
                 <div id="control-keys">
-                  <div id="control-head">Controls</div>
-                  <div>Left 👉 A or ➡️</div>
-                  <div>Right 👉 D or ⬅️</div>
-                  <div>Up 👉 W or ⬆️</div>
-                  <div>Down 👉 S or ⬇️</div>
+                  <div id="control-head">Steuerung</div>
+                  <div class="control-item">Links: <span class="control-key"></span>A oder ➡️</div>
+                  <div class="control-item">Rechts: <span class="control-key"></span>D oder ⬅️</div>
+                  <div class="control-item">Hoch: <span class="control-key"></span>W oder ⬆️</div>
+                  <div class="control-item">Runter: <span class="control-key"></span>S oder ⬇️</div>
                 </div>
                 <div id="controls">
-                    <button id="show-grid">SHOW GRID</button>
+                    <button id="show-grid">Raster zeigen</button>
                     <button id="pause" class="pause-active">PAUSE</button>
                     <button id="reset">RESET</button>
                 </div>
-                <div id="play">Press control keys to start<span style="font-size: 3em;">⌨️</span></div>
-                <div id="channel">TLH</div>        
+                <div id="play">Steuerungstasten drücken, um zu starten<span style="font-size: 3em;">⌨️</span></div>
+        <script src="/js/snake.js" defer></script>
     </body>
 
 </head>
-<body>
-    
-</body>
+
 </html>
 
 

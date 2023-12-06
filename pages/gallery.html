@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="/css/gallery.css">
+  </head>
+
+    <body>
+        <div class="parent">
+            <div class="header"> 
+                <header>
+                    <img class="logo" src="logo.svg" alt="logo">
+                    <nav>
+                        <ul class="nav_links">
+                            <li><a href="/pages/profile.html">Über mich</a></li>
+                            <li><a href="../index.html">Home Bachelorthema</a></li>
+                            <li><a href="/pages/gallery.html"class="active">Galerie</a></li>
+                        </ul>
+                    </nav>
+                   <a class="cta" href="/pages/snake.html"><button>QR-Snake</button></a>
+                </header>
+            </div>
+            <div class="wrapper">
+                <!-- filter Items -->
+                <nav>
+                  <div class="items">
+                    <span class="item active" data-name="all">Alle</span>
+                    <span class="item" data-name="ai">KI generiert</span>
+                    <span class="item" data-name="animated">Animiert (2D)</span>
+                    <span class="item" data-name="background">Hintergrund</span>
+                    <span class="item" data-name="creative">Kreatives Design</span>
+                    <span class="item" data-name="environment">Umgebung</span>
+                    <span class="item" data-name="image">Bild</span>
+                    <span class="item" data-name="isometric">Isometrisch (3D)</span>
+                    <span class="item" data-name="silhouette">Silhouette</span>
+
+                  </div>
+                </nav>
+                <!-- filter Images -->
+                <div class="gallery">
+                  <div class="image" data-name="ai"><span><img src="/img/gallery/ai/ai_cat.png" alt="QR AI Katze"></span></div>
+                  <div class="image" data-name="ai"><span><img src="/img/gallery/ai/ai_computer.jpeg" alt="QR AI Computer"></span></div>
+                  <div class="image" data-name="ai"><span><img src="/img/gallery/ai/ai_monster.png" alt="QR AI Monster"></span></div>
+                  <div class="image" data-name="ai"><span><img src="/img/gallery/ai/ai_mountain.jpg" alt="QR AI Berg Anime Girl"></span></div>
+                  <div class="image" data-name="ai"><span><img src="/img/gallery/ai/ai_pizza.jpg" alt="QR AI Pizza"></span></div>
+                  <div class="image" data-name="ai"><span><img src="/img/gallery/ai/ai_tiger.jpeg" alt="QR AI Tiger"></span></div>
+
+                  <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_beatles.gif" alt="QR Beatles animierter Walk"></span></div>
+                  <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_circles.gif" alt="QR animierte Kreise"></span></div>
+                  <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_city.gif" alt="QR animierte Stadt"></span></div>
+                  <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_coke.gif" alt="QR animierte Cola"></span></div>
+                  <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_music.gif" alt="QR animierte Musik"></span></div>
+                  <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_pacman.gif" alt="QR Pacman animiert"></span></div>
+                  <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_pond.gif" alt="QR animierter Teich"></span></div>
+                  <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_street.gif" alt="QR animierte Strasse"></span></div>
+
+                  <div class="image" data-name="background"><span><img src="/img/gallery/background/background_cat.jpg" alt="QR Geisha Katze"></span></div>
+                  <div class="image" data-name="background"><span><img src="/img/gallery/background/background_halloween.jpg" alt="QR Halloween Haus"></span></div>
+                  <div class="image" data-name="background"><span><img src="/img/gallery/background/background_ironman.jpeg" alt="QR Ironman 2 Poster"></span></div>
+                  <div class="image" data-name="background"><span><img src="/img/gallery/background/background_portrait.jpg" alt="QR Portrait"></span></div>
+                  <div class="image" data-name="background"><span><img src="/img/gallery/background/background_shirt.jpg" alt="QR Jeanshemd"></span></div>
+                  <div class="image" data-name="background"><span><img src="/img/gallery/background/background_teeth.jpg" alt="QR Zahn beissen"></span></div>
+                  <div class="image" data-name="background"><span><img src="/img/gallery/background/background_tree.jpg" alt="QR Baumhaus"></span></div>
+                  <div class="image" data-name="background"><span><img src="/img/gallery/background/background_turkey.jpg" alt="QR Truthahn"></span></div>
+
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_blue.png" alt="QR blau orange"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_colors.jpg" alt="QR bunt"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_media.jpg" alt="QR Media"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_NYT.jpg" alt="QR New York Times"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_redbull.jpg" alt="QR Redbull"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_seat.jpg" alt="QR Seat Strasse"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_sketch.jpg" alt="QR Sketch & Draw"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_style.jpg" alt="QR spitzig"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_text.jpg" alt="QR Text"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_trees.jpg" alt="QR Apfelbaum Verpackung"></span></div>
+                  <div class="image" data-name="creative"><span><img src="/img/gallery/creative_design/creative_worms.jpg" alt="QR Wurm"></span></div>
+               
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_angrybirds.jpg" alt="QR Angry Birds"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_apple.png" alt="QR Apfel"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_board.png" alt="QR Wandtafel"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_coffee.png" alt="QR Kaffee"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_drones.webp" alt="QR Drohnenshow"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_gras.png" alt="QR Gras"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_mcd.png" alt="QR Mc Donalds"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_mm.jpg" alt="QR M&M"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_sand.jpg" alt="QR Sand Strand"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_sticky.jpg" alt="QR Haftnotiz"></span></div>
+                  <div class="image" data-name="environment"><span><img src="/img/gallery/environment/environment_vegetable.png" alt="QR Gemüse"></span></div>
+
+                  <div class="image" data-name="image"><span><img src="/img/gallery/image/image_einstein.jpeg" alt="QR Einstein"></span></div>
+                  <div class="image" data-name="image"><span><img src="/img/gallery/image/image_king.png" alt="QR King"></span></div>
+                  <div class="image" data-name="image"><span><img src="/img/gallery/image/image_lays.jpg" alt="QR Chips Lays"></span></div>
+                  <div class="image" data-name="image"><span><img src="/img/gallery/image/image_mickey.jpeg" alt="QR Mickey Maus Disney"></span></div>
+                  <div class="image" data-name="image"><span><img src="/img/gallery/image/image_pop.jpg" alt="QR Marilyn Monroe"></span></div>
+                  <div class="image" data-name="image"><span><img src="/img/gallery/image/image_stevejobs.jpg" alt="QR Steve Jobs"></span></div>
+
+                  <div class="image" data-name="isometric"><span><img src="/img/gallery/isometric/isometric_city.gif" alt="QR Stadt"></span></div>
+                  <div class="image" data-name="isometric"><span><img src="/img/gallery/isometric/isometric_fabric.png" alt="QR Fabrik"></span></div>
+                  <div class="image" data-name="isometric"><span><img src="/img/gallery/isometric/isometric_house.jpg" alt="QR Haus"></span></div>
+                  <div class="image" data-name="isometric"><span><img src="/img/gallery/isometric/isometric_party.gif" alt="QR Party"></span></div>
+                  <div class="image" data-name="isometric"><span><img src="/img/gallery/isometric/isometric_street.gif" alt="QR Strasse"></span></div>
+                  <div class="image" data-name="isometric"><span><img src="/img/gallery/isometric/isometric_toyota.gif" alt="QR Toyota Stadt"></span></div>
+
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_africa.jpg" alt="QR Afrika"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_brain.jpg" alt="QR Gehirn"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_darthvader.jpg" alt="QR Darth Vader"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_dog.jpeg" alt="QR Hund"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_fire.jpg" alt="QR Feuer"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_glas.jpg" alt="QR Weinglas"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_goat.jpg" alt="QR Ziege"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_guitar.jpg" alt="QR Gitarre"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_hair.jpg" alt="QR Haare"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_hippo.jpg" alt="QR Nilpferd"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_icecream.jpg" alt="QR Glace"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_spider.jpg" alt="QR Spinne"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_warrior.jpg" alt="QR Krieger"></span></div>
+                  <div class="image" data-name="silhouette"><span><img src="/img/gallery/silhouette/silhouette_yoda.jpg" alt="QR Yoda"></span></div>
+
+              </div>
+              <!-- fullscreen img preview box -->
+              <div class="preview-box">
+                <div class="details">
+                  <span class="title">Image Category: <p></p></span>
+                  <span class="icon fas fa-times"></span>
+                </div>
+                <div class="image-box"><img src="" alt=""></div>
+              </div>
+              <div class="shadow"></div>
+            
+              <script src="/js/gallery.js" defer></script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
