@@ -2,11 +2,11 @@
 
 require('config.php');
 
-// $username = $_POST["username"];
-// $score = $_POST["score"];
+$username = $_POST["username"];
+$score = $_POST["score"];
 
-$username = "markusi";
-$score = "12";
+// $username = "koloko";
+// $score = "124";
 
 $sql = "INSERT INTO leaderboard (username, score) VALUES (:Username, :Score)";
 
