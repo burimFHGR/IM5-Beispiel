@@ -2,7 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(29, 29, 29);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
 }
 
 .parent {
@@ -16,18 +18,19 @@
   .header { grid-area: 1 / 1 / 2 / 6; }
   .wrapper { grid-area: 1 / 1 / 6 / 6; }
 
-body
-{
-    background-color: rgb(249, 199, 137);
-}
 
-li, a, button,p {
+li, a, button {
     text-decoration: none;
     color: white;
-    text-transform: capitalize;
     margin-left: 20px;
 }
 
+p {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -251,39 +254,4 @@ nav {
 }
 .shadow.show{
   display: block;
-}
-
-
-@media (max-width: 1000px) {
-  .gallery .image{
-    width: calc(100% / 3);
-  }
-}
-@media (max-width: 800px) {
-  .gallery .image{
-    width: calc(100% / 2);
-  }
-}
-@media (max-width: 700px) {
-  .wrapper nav .items{
-    max-width: 600px;
-  }
-  nav .items span{
-    padding: 7px 15px;
-  }
-}
-@media (max-width: 600px) {
-  .wrapper{
-    margin: 30px auto;
-  }
-  .wrapper nav .items{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  nav .items span{
-    margin: 5px;
-  }
-  .gallery .image{
-    width: 100%;
-  }
 }

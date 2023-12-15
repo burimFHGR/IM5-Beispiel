@@ -73,6 +73,14 @@ function preview(element){
   }
 }
 
+const windowWidth = window.innerWidth * 0.8;
+const windowHeight = window.innerHeight * 0.8;
+
+previewBox.style.width = `${windowWidth}px`;
+previewBox.style.height = `${windowHeight}px`;
+
+
+
 // Function to shuffle an array (Fisher-Yates algorithm)
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
