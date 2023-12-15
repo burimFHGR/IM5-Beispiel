@@ -41,6 +41,11 @@ header {
 
 .logo {
     cursor: pointer;
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 10px; /* Adjust the distance from the top */
+    left: 10px; /* Adjust the distance from the left */
 }
 
 .nav_links {

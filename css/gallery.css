@@ -22,11 +22,10 @@ body
 }
 
 li, a, button,p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
     text-decoration: none;
     color: white;
+    text-transform: capitalize;
+    margin-left: 20px;
 }
 
 header {
@@ -37,7 +36,17 @@ header {
 }
 
 .logo {
-    cursor: pointer;
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .nav_links {
@@ -45,8 +54,8 @@ header {
 }
 
 .nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
+  display: inline-block;
+  margin-right: 15px;
 }
 
 .nav_links li a {
@@ -54,24 +63,27 @@ header {
 }
 
 .nav_links li a:hover {
-    color: rgb(221, 133, 27);
+    color: #d4392e;
 }
 
 .active {
-    color: rgb(221, 133, 27);
+    color:#ffa7a7;
 }
 
 button {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  padding: 9px 25px;
+  background-color: #DB281C;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+  background-color: #a01f16; 
 }
 
 
@@ -88,7 +100,7 @@ button:hover {
 }
 ::selection{
   color: #fff;
-  background: #007bff;
+  background: #d4392e;
 }
 .wrapper{
   margin: 100px, auto;
@@ -123,15 +135,15 @@ nav {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: #007bff;
+  color: #ffffff;
   border-radius: 50px;
-  border: 2px solid #007bff;
+  border: 2px solid #d4392e;
   transition: all 0.3s ease;
 }
 .items span.active,
 .items span:hover{
   color: #fff;
-  background: #007bff;
+  background: #d4392e;
 }
 
 .gallery{
@@ -199,20 +211,25 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .details .title{
   display: flex;
   font-size: 18px;
   font-weight: 400;
 }
-.details .title p{
+.details .title {
   font-weight: 500;
   margin-left: 5px;
+  color:white;
 }
-.details .icon{
-  color: #007bff;
-  font-style: 22px;
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 20px; 
   cursor: pointer;
+  font-size: 30px; 
+  color: #ff7b7b;
 }
 .preview-box .image-box{
   width: 100%;
@@ -235,6 +252,7 @@ nav {
 .shadow.show{
   display: block;
 }
+
 
 @media (max-width: 1000px) {
   .gallery .image{

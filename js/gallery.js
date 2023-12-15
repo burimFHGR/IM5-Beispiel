@@ -35,6 +35,28 @@ previewImg = previewBox.querySelector("img"),
 closeIcon = previewBox.querySelector(".icon"),
 shadow = document.querySelector(".shadow");
 
+
+// Function to handle closing the preview box
+function closePreview() {
+  previewBox.classList.remove("show"); // hide the preview box
+  shadow.classList.remove("show"); // hide the light grey background
+  document.querySelector("body").style.overflow = "auto"; // show the scroll bar on body
+}
+
+// Event listener for the "Escape" key
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closePreview();
+  }
+});
+
+// Event listener for the close icon
+const clickClose = document.querySelector(".close-icon");
+clickClose.addEventListener("click", function () {
+  closePreview();
+});
+
+
 function preview(element){
   //once user click on any image then remove the scroll bar of the body, so user cant scroll up or down
   document.querySelector("body").style.overflow = "hidden";
@@ -50,3 +72,21 @@ function preview(element){
     document.querySelector("body").style.overflow = "auto"; //show the scroll bar on body
   }
 }
+
+// Function to shuffle an array (Fisher-Yates algorithm)
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+// Get all elements with the class "image" inside the "gallery" container
+const gallery = document.querySelector('.gallery');
+const images = Array.from(gallery.querySelectorAll('.image'));
+
+// Shuffle the array of images
+shuffleArray(images);
+
+// Append the shuffled images back to the gallery
+images.forEach(image => gallery.appendChild(image));

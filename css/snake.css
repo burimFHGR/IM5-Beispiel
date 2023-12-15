@@ -43,7 +43,7 @@ body {
   border: 1px solid #cccccc;
   padding: 12px;
   border-radius: 25px;
-  box-shadow: inset 0 0 8px lightgreen;
+  box-shadow: inset 0 0 8px lightcoral;
   color: #cccccc;
 }
 
@@ -57,8 +57,8 @@ body {
 
 #controls {
   position: absolute;
-  top: 40%;
-  left: 12%;
+  top: 50%;
+  left: 7%;
   display: flex;
   flex-direction: column;
 }
@@ -71,7 +71,7 @@ body {
   padding: 12px;
   font-size: 1.2em;
   line-height: 48px;
-  box-shadow: 0 0 8px lightgreen;
+  box-shadow: 0 0 8px lightcoral;
 }
 
 #control-head {
@@ -91,39 +91,39 @@ body {
 #reset,
 #show-grid,
 .pause-active {
-  background: #000d36;
+  background: #000000;
   color: #cccccc;
   border-radius: 25px;
-  width: 120px;
+  width: 250px;
   padding: 12px;
   margin-top: 18px;
-  box-shadow: 0 0 3px lightgreen;
+  box-shadow: 0 0 3px lightcoral;
   font-size: 0.8em;
   font-weight: bold;
   transition: box-shadow 0.3s;
-  text-shadow: 0 0 8px lightseagreen;
+  text-shadow: 0 0 8px lightsalmon;
   text-transform: uppercase;
 }
 
 .pause-not-active {
-  background: rgba(239, 239, 240, 0.4);
+  background:rgba(212, 57, 46, 0.);
   box-shadow: none;
   color: #cccccc;
   border-radius: 25px;
-  width: 120px;
+  width: 250px;
   padding: 12px;
   margin-top: 18px;
   font-size: 0.8em;
   font-weight: bold;
-  text-shadow: 0 0 8px lightseagreen;
+  text-shadow: 0 0 8px lightsalmon;
   text-transform: uppercase;
 }
 
 #reset:hover,
 #show-grid:hover,
 .pause-active:hover {
-  box-shadow: 0 0 12px lightgreen;
-  color: yellowgreen;
+  box-shadow: 0 0 12px rgb(255, 255, 255);
+  color:  lightsalmon;
 }
 
 #play {
@@ -176,7 +176,6 @@ body {
 
 body
 {
-  background-color: rgb(249, 199, 137);
 }
 
 li, a, button,p {
@@ -187,6 +186,21 @@ li, a, button,p {
   color: white;
 }
 
+.title-snake{
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  margin-top: 1.5%;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+.title-snake:hover{
+  color: #d4392e;
+}
+
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -194,34 +208,10 @@ header {
   padding: 30px 10%;
 }
 
-.logo {
-  cursor: pointer;
-}
-
-.nav_links {
-  list-style: none;
-}
-
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav_links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-  color: rgb(221, 133, 27);
-}
-
-.active {
-  color: rgb(221, 133, 27);
-}
 
 button {
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: rgba(212, 57, 46, 1);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -229,7 +219,21 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: rgba(212, 57, 46, 0.8);
+}
+
+.logo {
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 
@@ -269,19 +273,7 @@ body{
   color: white;
   transform: translateY(-5em);
 }
-.search{
-  border-radius: 5px;
-  border: none;
-  background-color: transparent;
-  border-bottom: #0aa989 2px solid;
-  padding: .5em;
-  font-size: 1em;
-  color: white;
-  
-}
-.search:focus{
-  outline: none;
-}
+
 table{
   margin-top: 2em;
   width: 50em;

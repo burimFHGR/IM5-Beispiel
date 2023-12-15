@@ -10,12 +10,14 @@
     <body>
         <div class="parent">
             <div class="header"> 
+              <a href="../index.html">
+                <img class="logo" src="/img/logo.svg" alt="logo">
+            </a>
                 <header>
-                    <img class="logo" src="logo.svg" alt="logo">
                     <nav>
                         <ul class="nav_links">
                             <li><a href="/pages/profile.html">Über mich</a></li>
-                            <li><a href="../index.html">Home Bachelorthema</a></li>
+                            <li><a href="../index.html">Bachelorthema</a></li>
                             <li><a href="/pages/gallery.html"class="active">Galerie</a></li>
                         </ul>
                     </nav>
@@ -29,10 +31,10 @@
                     <span class="item active" data-name="all">Alle</span>
                     <span class="item" data-name="ai">KI generiert</span>
                     <span class="item" data-name="animated">Animiert (2D)</span>
-                    <span class="item" data-name="background">Hintergrund</span>
-                    <span class="item" data-name="creative">Kreatives Design</span>
-                    <span class="item" data-name="environment">Umgebung</span>
-                    <span class="item" data-name="image">Bild</span>
+                    <span class="item" data-name="background">Kulisse</span>
+                    <span class="item" data-name="creative">Ästhetisch</span>
+                    <span class="item" data-name="environment">Passend zum Umfeld</span>
+                    <span class="item" data-name="image">Visuell</span>
                     <span class="item" data-name="isometric">Isometrisch (3D)</span>
                     <span class="item" data-name="silhouette">Silhouette</span>
 
@@ -55,6 +57,7 @@
                   <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_pacman.gif" alt="QR Pacman animiert"></span></div>
                   <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_pond.gif" alt="QR animierter Teich"></span></div>
                   <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_street.gif" alt="QR animierte Strasse"></span></div>
+                  <div class="image" data-name="animated"><span><img src="/img/gallery/animated/animated_sonic.gif" alt="QR animierter Sonic"></span></div>
 
                   <div class="image" data-name="background"><span><img src="/img/gallery/background/background_cat.jpg" alt="QR Geisha Katze"></span></div>
                   <div class="image" data-name="background"><span><img src="/img/gallery/background/background_halloween.jpg" alt="QR Halloween Haus"></span></div>
@@ -122,8 +125,8 @@
               <!-- fullscreen img preview box -->
               <div class="preview-box">
                 <div class="details">
-                  <span class="title">Image Category: <p></p></span>
-                  <span class="icon fas fa-times"></span>
+                  <span class="title">Bildkategorie: <p></p></span>
+                  <div class="close-icon" onclick="closeDetails()">X</div>
                 </div>
                 <div class="image-box"><img src="" alt=""></div>
               </div>

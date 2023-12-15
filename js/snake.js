@@ -2295,11 +2295,11 @@
   const toggleGrid = () => {
     if (!showGrid) {
       showGrid = true;
-      showGridEl.innerHTML = `Hide Grid`
+      showGridEl.innerHTML = `Raster entfernen `
       return;
     }
     showGrid = false;
-    showGridEl.innerHTML=`Show Grid`
+    showGridEl.innerHTML=`Raster anzeigen`
   };
 
   showGridEl.addEventListener("click", toggleGrid);
@@ -2474,14 +2474,14 @@ document.addEventListener('DOMContentLoaded', function () {
       // Toggle the visibility of the leaderboard
       if (leaderboard.style.display === 'none') {
           leaderboard.style.display = 'block';
-          button.innerHTML = 'Leaderboard verstecken';
+          button.innerHTML = 'Bestenliste ausblenden';
           canvas.style.display = 'none'; 
           play.style.display = 'none';
           holeScores();
 
       } else {
           leaderboard.style.display = 'none';
-          button.innerHTML = 'Leaderboard anzeigen';
+          button.innerHTML = 'Bestenliste anzeigen';
           canvas.style.display = 'block';
           play.style.display = 'block';
 
@@ -2490,3 +2490,10 @@ document.addEventListener('DOMContentLoaded', function () {
   
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var titleSnake = document.querySelector('.title-snake');
+
+  titleSnake.addEventListener('click', function() {
+    history.back();
+  });
+});
