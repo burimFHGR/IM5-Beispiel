@@ -5,7 +5,7 @@ Mein Projekt zielte darauf ab, eine Desktop-Webseite zu realisieren und zu gesta
 # Quellen
 Zu den integrierten Projekten gehören: 
 - filterbare Bildergalerie (Quelle: https://www.codingnepalweb.com/filterable-image-gallery-javascript/) 
-- Snake-Game (Quelle: https://github.com/deepmeena70/snake-game-canvas-javascript).
+- Snake-Game (Quelle: https://github.com/deepmeena70/snake-game-canvas-javascript)
 
-# Zweck
+# Entwicklungshilfe
 Während der Entwicklung habe ich auf KI-Tools wie ChatGPT und CoPilot zurückgegriffen, um unterstützende Ideen und Codevorschläge zu erhalten. Dies ermöglichte eine effiziente und kreative Umsetzung der Webseite.
