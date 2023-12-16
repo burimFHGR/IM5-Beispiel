@@ -258,7 +258,10 @@ button {
 }
 
 .undericon {
-margin-top: 400px;
+margin-top: 85%;
+font-weight: 300;
+overflow: hidden;
+width: 90%;
 font-weight: 300;
 }
 
@@ -278,6 +281,8 @@ font-weight: 300;
 
 .undericon-lehrprojekt {
     margin-top: 20%;
+    overflow: hidden;
+    width: 70%;
     font-weight: 300;
       }
 
