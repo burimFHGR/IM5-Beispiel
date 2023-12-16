@@ -7,5 +7,7 @@ Zu den integrierten Projekten gehören:
 - filterbare Bildergalerie (Quelle: https://www.codingnepalweb.com/filterable-image-gallery-javascript/) 
 - Snake-Game (Quelle: https://github.com/deepmeena70/snake-game-canvas-javascript)
 
-# Entwicklungshilfe
-Während der Entwicklung habe ich auf KI-Tools wie ChatGPT und CoPilot zurückgegriffen, um unterstützende Ideen und Codevorschläge zu erhalten. Dies ermöglichte eine effiziente und kreative Umsetzung der Webseite.
+# Entwicklungshilfen
+Die Coaching-Ratschläge von Benjamin Hanniman waren sehr hilfreich. Unter anderem konnte er mir einen Tipp sowie einen Codevorschlag (siehe: https://chat.openai.com/share/51738521-6c49-4177-b620-22fd838903bd) geben, wie man mithilfe des Local Storage einrichten kann, dass wenn die Website zum ersten Mal geöffnet wird, die Weiterleitung zuerst auf eine Unterseite erfolgt, anstatt auf index.html.
+
+Während des Entwicklungsprozesses habe ich auf KI-Tools wie ChatGPT und CoPilot zurückgegriffen, um zusätzliche Ideen und Codevorschläge zu erhalten. Diese Unterstützung erwies sich zudem äusserst hilfreich beim Debugging und ermöglichte eine effiziente sowie kreative Umsetzung der Webseite.
