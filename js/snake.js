@@ -4307,7 +4307,7 @@ const obstacles = [obstacle, obstacle2, obstacle3, obstacle4, obstacle5, obstacl
          localStorage.setItem('userName', name);
 
         // Do something with the entered name, e.g., display it
-        alert('Klicke auf Leaderboard anzeigen, um zu sehen, wie sich ' + name + ' im Vergleich zu anderen Spielern positioniert!');
+        alert('Klicke auf Bestenliste anzeigen, um zu sehen, wie sich ' + name + ' im Vergleich zu anderen Spielern positioniert!');
         
         // Set hasRun to true to ensure the code doesn't run again
         hasRun = true;
@@ -4323,15 +4323,22 @@ const obstacles = [obstacle, obstacle2, obstacle3, obstacle4, obstacle5, obstacl
 
     if (score >= localStorage.getItem("highScore") && localStorage.getItem("userName")) {
       setTimeout(() => {
-        alert('Gratuliere ' + localStorage.getItem("userName") + ', du hast deinen Highscore geknackt! Das Leaderboard wurde angepasst.');
+        alert('Gratuliere ' + localStorage.getItem("userName") + ', du hast deinen Highscore geknackt! Die Bestenliste wurde angepasst.');
         updateScore();
         location.reload();
       }, 1000); // 1000 milliseconds = 1 second
     }
 
-    if (score <= 2) {
+    if (score <= 4 && !hasRun) {
       setTimeout(() => {
         alert('Versuche es erneut! Um auf das Leaderboard zu gelangen, musst du mindestens 5 Punkte erzielen.');
+        location.reload();
+      }, 1000); // 1000 milliseconds = 1 second
+    }
+
+    if (score <= localStorage.getItem("highScore") && localStorage.getItem("userName")) {
+      setTimeout(() => {
+        alert('Versuche es erneut, um dein Highscore zu knacken!');
         location.reload();
       }, 1000); // 1000 milliseconds = 1 second
     }
@@ -4995,7 +5002,7 @@ function scoresAnzeigen(jsonData) {
   // Create table header
   var thead = table.createTHead();
   var headerRow = thead.insertRow();
-  var headers = ["Rank", "Username", "Score"];
+  var headers = ["Rang", "Name", "Score"];
 
   for (var i = 0; i < headers.length; i++) {
     var th = document.createElement("th");
